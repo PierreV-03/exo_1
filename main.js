@@ -5,8 +5,8 @@ function myMap(arr, func){
     let newArray = [];
 
     for(let i = 0; i < arr.length; i++){
-        func(i);
-        newArray.push(i);
+        var result = func(i);
+        newArray.push(result);
     }
 
     return newArray;
@@ -43,5 +43,5 @@ function func2(element){
 //exo 3 :
 
 function myReduce(array, func3, initialValue){
-    
+    initialValue = 0;
 }
